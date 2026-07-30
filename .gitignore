@@ -27,4 +27,14 @@ venv/
 
 # OS files
 .DS_Store
-Thumbs.db
+Thumbs.db# Vendor Freight Cost Prediction datasets
+0_Vendor Freight Cost Prediction/Data/
+
+# Jupyter checkpoints
+**/.ipynb_checkpoints/
+
+# Python cache
+**/__pycache__/
+
+# Python compiled files
+*.pyc
