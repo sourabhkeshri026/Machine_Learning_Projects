@@ -893,6 +893,144 @@ div[data-testid="stDialog"] [data-testid="stVerticalBlock"] {
     margin: 0 auto;
 }
 
+/* =====================================================
+   RENDER / STREAMLIT 1.58 COMPATIBILITY OVERRIDES
+===================================================== */
+
+.main-header h1,
+.main-header h2,
+.main-header h3,
+.main-header h4,
+.prediction-card h1,
+.prediction-card h2,
+.prediction-card h3,
+.input-panel h1,
+.input-panel h2,
+.input-panel h3,
+.input-panel h4 {
+    color: #FFFFFF !important;
+    -webkit-text-fill-color: #FFFFFF !important;
+}
+
+[data-testid="stNumberInput"] label,
+[data-testid="stTextInput"] label,
+[data-testid="stSelectbox"] label,
+[data-testid="stRadio"] label,
+[data-testid="stForm"] label {
+    color: #F8FAFC !important;
+    font-weight: 600 !important;
+}
+
+[data-testid="stNumberInput"] > div,
+[data-testid="stNumberInput"] div[data-baseweb="input"],
+[data-testid="stNumberInput"] div[data-baseweb="base-input"] {
+    background: rgba(15, 23, 42, 0.82) !important;
+    border: 1px solid rgba(255, 255, 255, 0.18) !important;
+    border-radius: 12px !important;
+    box-shadow: none !important;
+}
+
+[data-testid="stNumberInput"] input {
+    background: transparent !important;
+    color: #FFFFFF !important;
+    -webkit-text-fill-color: #FFFFFF !important;
+    caret-color: #60A5FA !important;
+    font-size: 16px !important;
+    font-weight: 600 !important;
+}
+
+[data-testid="stNumberInput"] button {
+    background: rgba(30, 41, 59, 0.96) !important;
+    color: #FFFFFF !important;
+    border-color: rgba(255, 255, 255, 0.10) !important;
+}
+
+[data-testid="stNumberInput"] button:hover {
+    background: rgba(37, 99, 235, 0.95) !important;
+    color: #FFFFFF !important;
+}
+
+[data-testid="stNumberInput"]:focus-within div[data-baseweb="input"],
+[data-testid="stNumberInput"]:focus-within div[data-baseweb="base-input"] {
+    border-color: #60A5FA !important;
+    box-shadow: 0 0 0 1px #60A5FA, 0 0 18px rgba(96,165,250,.35) !important;
+}
+
+[data-testid="stForm"] {
+    background: transparent !important;
+    border: 1px solid rgba(255,255,255,.12) !important;
+    border-radius: 16px !important;
+}
+
+[data-testid="stFormSubmitButton"] button,
+.stFormSubmitButton > button,
+[data-testid="stButton"] button,
+.stButton > button {
+    width: 100% !important;
+    min-height: 48px !important;
+    border: 1px solid rgba(96,165,250,.35) !important;
+    border-radius: 12px !important;
+    color: #FFFFFF !important;
+    background: linear-gradient(135deg,#4F46E5,#2563EB) !important;
+    font-weight: 700 !important;
+    box-shadow: 0 10px 25px rgba(37,99,235,.30) !important;
+}
+
+[data-testid="stDialog"],
+div[role="dialog"] {
+    color: #F8FAFC !important;
+}
+
+[data-testid="stDialog"] > div,
+[data-testid="stDialog"] div[role="dialog"],
+div[role="dialog"] {
+    background: rgba(8, 15, 30, 0.98) !important;
+    color: #F8FAFC !important;
+    border: 1px solid rgba(255,255,255,.16) !important;
+    border-radius: 22px !important;
+    box-shadow: 0 28px 90px rgba(0,0,0,.65) !important;
+    backdrop-filter: blur(26px) !important;
+    -webkit-backdrop-filter: blur(26px) !important;
+}
+
+[data-testid="stDialog"] h1,
+[data-testid="stDialog"] h2,
+[data-testid="stDialog"] h3,
+[data-testid="stDialog"] h4,
+[data-testid="stDialog"] p,
+[data-testid="stDialog"] label,
+[data-testid="stDialog"] span,
+div[role="dialog"] h1,
+div[role="dialog"] h2,
+div[role="dialog"] h3,
+div[role="dialog"] h4,
+div[role="dialog"] p,
+div[role="dialog"] label,
+div[role="dialog"] span {
+    color: #F8FAFC !important;
+}
+
+[data-testid="stDialog"] details,
+div[role="dialog"] details {
+    background: rgba(255,255,255,.035) !important;
+    border: 1px solid rgba(255,255,255,.14) !important;
+    border-radius: 12px !important;
+}
+
+[data-testid="stDialog"] [data-testid="stDataFrame"],
+div[role="dialog"] [data-testid="stDataFrame"] {
+    background: rgba(8,15,30,.86) !important;
+    border-radius: 12px !important;
+    overflow: hidden !important;
+}
+
+[data-testid="stDialog"] [data-testid="stMetricLabel"],
+[data-testid="stDialog"] [data-testid="stMetricValue"],
+div[role="dialog"] [data-testid="stMetricLabel"],
+div[role="dialog"] [data-testid="stMetricValue"] {
+    color: #FFFFFF !important;
+}
+
 </style>
 """.replace("__BACKGROUND__", f"data:image/png;base64,{background_image}"),
 unsafe_allow_html=True
